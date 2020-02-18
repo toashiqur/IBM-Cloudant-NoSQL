@@ -59,9 +59,9 @@ Table 2 lists the special methods used to perform query and search. In addition 
 *Table 2: List of methods used for performing query and search on the databa*
 | Package        | Method          | Purpose |
 |:-------------|:------------------|:------|
-cloudant.database|cloudant.database.CloudantDatabase(client, database_name, fetch_limit=100)<br>get_query_result(selector, fields=None, raw_result=False, **kwargs)<br>get_search_result(ddoc_id, index_name, **query_params)|Instantiates cloudant database object.<br>Retrieves documents based on the specified query.<br>Retrieves documents based on the query specified in the search.|
+|cloudant.database|cloudant.database.CloudantDatabase(client, database_name, fetch_limit=100)<br>get_query_result(selector, fields=None, raw_result=False, **kwargs)<br>get_search_result(ddoc_id, index_name, **query_params)|Instantiates cloudant database object.<br>Retrieves documents based on the specified query.<br>Retrieves documents based on the query specified in the search.|
 
-# Used Query and Search
+# Sample Query and Search
 ## Q1: Find all reviews from member A1004AX2J2HXGL.
 ```
    selector = {'member_id': {'$eq': 'A1004AX2J2HXGL'}}
